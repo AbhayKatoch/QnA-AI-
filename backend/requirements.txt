@@ -29,5 +29,3 @@ supabase
 # --- CORS & Middleware ---
 starlette
 
-# --- Optional Utilities ---
-python-multipart
