@@ -99,6 +99,14 @@ async def list_documents():
         ]
     }
 
+@router.get("/cron")
+async def cron_status():
+    """Manual endpoint to confirm the cron router is active."""
+    return {
+        "status": "Document cron job is running successfully!",
+        "timestamp": datetime.utcnow().isoformat(),
+    }
+
 @router.delete("/{document_id}")
 async def delete_document(document_id:str):
     db = sessionLocal()
