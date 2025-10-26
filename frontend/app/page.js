@@ -5,6 +5,9 @@ import axios from "axios";
 import { Upload, Trash2, FileText, Loader2, Cloud } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
 
+const NEXT_PUBLIC_BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+
 export default function Home() {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);

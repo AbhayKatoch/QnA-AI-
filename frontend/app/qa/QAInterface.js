@@ -67,6 +67,7 @@ function ShimmerLoader() {
     </div>
   );
 }
+const NEXT_PUBLIC_BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export default function QAInterface() {
   const searchParams = useSearchParams();
@@ -81,6 +82,7 @@ export default function QAInterface() {
   const [loading, setLoading] = useState(false);
   const [thinking, setThinking] = useState(false);
   const answerRef = useRef(null);
+
 
   // Fetch documents
   useEffect(() => {
