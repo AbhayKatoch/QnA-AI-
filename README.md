@@ -1,6 +1,6 @@
 # Smart Document Q&A Assistant
 
-An **AI-powered document understanding system** built with **FastAPI**, **Next.js (App Router)**, **LangChain**, **Groq (LLaMA 3)**, and **Supabase Storage**.
+An **AI-powered document understanding system** built with **FastAPI**, **Next.js (App Router)**, **LangChain**, **Groq (LLaMA 3)**, Postgres and **Supabase Storage**.
 
 This application allows users to **upload PDFs or text files**, automatically process them into embeddings using **FAISS** and **Sentence Transformers**, and then **ask natural language questions** about their contents — all in real time.
 
