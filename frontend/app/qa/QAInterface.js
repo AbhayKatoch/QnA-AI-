@@ -85,7 +85,7 @@ export default function QAInterface() {
   // Fetch documents
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/documents")
+      .get(`${NEXT_PUBLIC_BACKEND_URL}/documents`)
       .then((res) => setDocuments(res.data.documents))
       .catch(() => toast.error("Failed to load documents"));
   }, []);
@@ -94,7 +94,7 @@ export default function QAInterface() {
   useEffect(() => {
     if (selectedDoc) {
       axios
-        .get(`http://127.0.0.1:8000/api/documents/${selectedDoc}/history`)
+        .get(`${NEXT_PUBLIC_BACKEND_URL}/documents/${selectedDoc}/history`)
         .then((res) => setHistory([...res.data].reverse()))
         .catch(() => {});
     }
@@ -126,7 +126,7 @@ export default function QAInterface() {
 
     try {
       const res = await axios.post(
-        `http://127.0.0.1:8000/api/documents/query`,
+        `${NEXT_PUBLIC_BACKEND_URL}/documents/query`,
         null,
         { params: { document_id: selectedDoc, question } }
       );
@@ -137,7 +137,7 @@ export default function QAInterface() {
       setSources(src || []);
 
       axios
-        .get(`http://127.0.0.1:8000/api/documents/${selectedDoc}/history`)
+        .get(`${NEXT_PUBLIC_BACKEND_URL}/documents/${selectedDoc}/history`)
         .then((res) => setHistory([...res.data].reverse()));
 
       toast.success("Answer generated!");

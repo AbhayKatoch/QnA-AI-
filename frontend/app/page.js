@@ -15,7 +15,7 @@ export default function Home() {
   // Fetch uploaded documents
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/documents`)
+      .get(`${NEXT_PUBLIC_BACKEND_URL}/documents`)
       .then((res) => setUploadedDocs(res.data.documents))
       .catch(() => toast.error("Failed to load documents"))
       .finally(() => setLoading(false));
@@ -38,7 +38,7 @@ export default function Home() {
 
     try {
       const res = await axios.post(
-        `http://127.0.0.1:8000/api/documents/upload`,
+        `${NEXT_PUBLIC_BACKEND_URL}/documents/upload`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -61,7 +61,7 @@ export default function Home() {
   const handleDelete = async (id) => {
     if (!confirm("Delete this document?")) return;
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/documents/${id}`);
+      await axios.delete(`${NEXT_PUBLIC_BACKEND_URL}/documents/${id}`);
       setUploadedDocs(uploadedDocs.filter((d) => d.document_id !== id));
       toast.success("Document deleted!");
     } catch {
