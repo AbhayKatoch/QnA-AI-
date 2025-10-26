@@ -19,15 +19,9 @@ langchain-groq
 
 # --- File Handling & Parsing ---
 pdfplumber
-pdf2image
-pytesseract
-Pillow
 
-# --- Cloud Integration ---
+
 supabase
 
-# --- CORS & Middleware ---
-starlette
 
-# --- Optional Utilities ---
 python-multipart
