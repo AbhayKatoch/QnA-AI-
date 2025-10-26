@@ -11,7 +11,7 @@ Base.metadata.create_all(bind=engine)
 origins = [
     "http://localhost:3000",      # your Next.js dev server
     "http://127.0.0.1:3000",  
-    "https://smart-qna-teal.vercel.app/"
+    "https://smart-qna-teal.vercel.app"
 ]
 
 app = FastAPI(title="Smart Document Q&A Assistant")
