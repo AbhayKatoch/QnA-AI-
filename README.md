@@ -240,12 +240,13 @@ The frontend communicates with the backend through **REST APIs** and uses **real
 ## 📸 Screenshots
 
 ### 🧾 Upload Page
-<img src="https://github.com/user-attachments/assets/c99243ac-119a-44de-8ecc-e22efcfbe6ea" alt="Upload Page - Smart Document Q&A Assistant" width="900" height="520" />
+<img src="https://github.com/user-attachments/assets/d5670889-9d0e-431c-8e8b-60747c3c0912" alt="Upload Page - Smart Document Q&A Assistant" width="900" height="520" />
 
 ---
 
 ### 💬 Q&A Interface
-<img src="https://github.com/user-attachments/assets/d5670889-9d0e-431c-8e8b-60747c3c0912" alt="Q&A Interface - Smart Document Q&A Assistant" width="900" height="520" />
+<img src="https://github.com/user-attachments/assets/c99243ac-119a-44de-8ecc-e22efcfbe6ea" alt="Q&A Interface - Smart Document Q&A Assistant" width="900" height="520" />
+
 
 
 ### ⚙️ Summary  
