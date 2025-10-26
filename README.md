@@ -6,6 +6,10 @@ This application allows users to **upload PDFs or text files**, automatically pr
 
 ---
 
+## Deployed Links
+- Frontend (Vercel) - https://smart-qna-teal.vercel.app
+- Backend (Render) - https://qna-ai.onrender.com
+
 ## 🚀 Features
 
 - Upload PDF/TXT files through a modern, responsive UI  
